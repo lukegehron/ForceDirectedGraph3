@@ -193,7 +193,7 @@ function getGraphDataSets() {
     };
     tunnel.description = "fabric data for a cylindrical tunnel shape";
 
-    //, loadBlocks, loadD3Dependencies, tunnel
+    //, loadBlocks, loadD3Dependencies, tunnel loadConnection12, 
 
-    return [loadConnection12, loadConnection10, loadConnection11, loadConnection20, loadConnection21, loadConnection30, loadConnection31];
+    return [loadConnection10, loadConnection11, loadConnection20, loadConnection21, loadConnection30, loadConnection31];
 }
