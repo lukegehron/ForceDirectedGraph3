@@ -3,109 +3,7 @@
 <html>
 	<head>
 		<title>Office Interaction Results</title>
-		<!-- <style>
-			body {
-				/* Make the body take up entire window minus a margin:
-				   http://stackoverflow.com/questions/485827/css-100-height-with-padding-margin
-				 */
-				position:   absolute;
-				top:        0;
-				left:       0;
-				right:      0;
-				bottom:     0;
-				margin:     20px;
-				margin-top: 40px;
-			}
-
-			body {
-				/* Stack children vertically using flex
-				   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
- 	 			*/
-				display:          flex;
-				flex-direction:   column;
-			}
-
-			.top {
-				/* Stack children horizontally within top half of screen */
-				display:          flex;
-				flex-direction:   row;
-				align-items:      center;
-			}
-
-			.top, textarea {
-				height:           50%;
-			}
-
-			.sides, .sides canvas, .sides div, .sides svg {
-				width:            100%;
-				height:           100%;
-			}
-
-			.middle {
-				z-index:          99;
-			}
-
-			/* Relative positioning for .sides so h1 can be centered above it */
-			.sides {
-				position:       relative;
-			}
-			h1 {
-				position:       absolute;
-				top:            0px;
-				width:          100%;
-				margin-top:     0px;
-				text-align:     center;
-			}
-		</style> -->
-		<!-- <style>
-			/* Make some things non-selectable:
-			   http://stackoverflow.com/questions/826782/css-rule-to-disable-text-selection-highlighting
-			 */
-			.noselect {
-				cursor: default;
-
-				-webkit-touch-callout: none; /* iOS Safari */
-				-webkit-user-select: none;   /* Chrome/Safari/Opera */
-				-khtml-user-select: none;    /* Konqueror */
-				-moz-user-select: none;      /* Firefox */
-				-ms-user-select: none;       /* IE/Edge */
-				user-select: none;           /* non-prefixed version, currently not supported by any browser */
-			}
-
-			html {
-				background-color: #fff;
-			}
-
-			h1, #convert {
-				text-shadow:    2px 2px 2px #9999ff;
-			}
-
-			h1 {
-				font-size:      250%;
-			}
-
-			p {
-				border-bottom:  1px solid #2222ff;
-				margin-bottom:  5px;
-				font-weight:    bold;
-				color:          #3333ff
-			}
-
-			#convert {
-				color:          darkred;
-				font-size:      10vw;
-				cursor:         pointer;
-			}
-
-			#convert:hover {
-				color: red;
-			}
-
-			path:hover {
-				stroke:         red;
-				stroke-width:   2px;
-			}
-		</style> -->
+		
 		<script src="3d-force-graph.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.js"></script>
 <script src="//unpkg.com/three-spritetext"></script>
@@ -125,45 +23,9 @@
 			<span id="graph-data-description"></span>
 			<button class="toggle-data-btn" onClick="toggleData()">Show me something else</button>
 	</div>
-	<!-- <script>
-	const Graph1 = ForceGraph3D()
-		// (document.getElementById('3d-graph'))
-		//   .jsonUrl('connections3.json')
-		//   .nodeAutoColorBy('group')
-		//   .nodeThreeObject(node => {
-		//     const sprite = new SpriteText(node.id);
-		//     sprite.color = node.color;
-		//     sprite.textHeight = 8;
-		//     return sprite;
-		//   });
-	//Spread nodes a little wider
-	Graph1.d3Force('charge').strength(-150);
-</script> -->
+	
 
 	<script src="index.js"></script>
-		<!-- <div class="top noselect">
-			<div class="sides">
-				<h1>WebGL</h1>
-				<canvas id="webgl"></canvas>
-			</div>
-			<div class="middle"> -->
-					<!-- I use the variant selector &#xFE0E; to keep iOS devices from using an emoji icon:
-					  http://meta.stackexchange.com/questions/261074/prev-next-triangles-rendered-as-emojis-on-ios-devices -->
-				<!-- <div id="convert">&#10145;&#xFE0E;</div>
-			</div>
-			<div class="sides">
-				<h1>SVG</h1>
-				<div id="svg"> -->
-					<!-- svg rendering element gets inserted here -->
-				<!-- </div>
-			</div>
-		</div>
-		<p class="noselect">Source:</p>
-		<textarea id="source" cols=80 rows=1></textarea>
-
-		<script src="https://www.marciot.com/lib/three/three.min.js"></script>
-		<script src="https://www.marciot.com/lib/three/SVGRenderer.js"></script>
-		<script src="https://www.marciot.com/lib/three/Projector.js"></script>
-		<script src="three-to-svg.js"></script> -->
+		
 	</body>
 </html>
